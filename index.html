@@ -16,14 +16,33 @@
         padding: 0;
         margin: 0;
       }
-      a {
+      a, a:link, a:visited {
         color: rgb(17, 74, 70);
         text-decoration: none;
         font-weight: bold;
       }
-      a:hover {
+      a:hover, a:active {
         filter: brightness(1.5);   
         text-decoration: underline;
+      }
+      a.connect, a.connect:link, a:connect:visited {
+        font-weight: 700;
+        cursor: pointer;
+        transition-duration: 0.1s;
+        transition-property: background-color, color, border-color, opacity, box-shadow;
+        transition-timing-function: ease-out;
+        outline: none;
+        border: 1px solid transparent;
+        margin: 0px;
+        box-shadow: rgb(0 0 0 / 10%) 0px 3px 12px 0px;
+        padding: 8px 18px;
+        min-height: 48px;
+        background-color: rgb(121, 225, 217);
+        color: rgb(17, 74, 70);
+        border-radius: 4px;
+      }
+      a.connect:hover, a.connect:active {
+        background-color: rgb(141, 230, 223);
       }
       .content {
         text-align: center;
@@ -95,7 +114,7 @@
       <p>
         We <strong>must</strong> work together, as colleagues - Corporate, AppleCare, and Retail - to demand systemic change in our work place.
       </p> 
-      <a href="/connect" rel="nofollow">Connect with #AppleToo</a>
+      <a class="connect" href="/connect" rel="nofollow">Connect with #AppleToo</a>
       <ul>
         <li>
           <blockquote>
