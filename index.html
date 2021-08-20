@@ -10,6 +10,11 @@
         background-color: #FFF7F0;
         font-family: 'Noto Serif', serif;
         font-size: 1.25rem;
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        padding: 0;
+        margin: 0;
       }
       a {
         color: rgb(17, 74, 70);
@@ -22,9 +27,13 @@
       }
       .content {
         text-align: center;
-        max-width: 800px;
         margin: auto;
         position: relative;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
       .content:before {
         content: '';
@@ -34,6 +43,8 @@
         top: 0;
         bottom: 0;
         background: transparent url('https://imposter-syndrome.herokuapp.com/_nuxt/img/f2e7c7f.png') center center no-repeat;
+        background-size: contain;
+        mix-blend-mode: color-dodge;
       }
     </style>
   </head>
