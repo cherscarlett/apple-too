@@ -61,11 +61,23 @@
         list-style-type: none;
         width: 50%;
       }
+      blockquote {
+        position: relative;
+      }
       blockquote:before {
         content: '"';
+        font-size: 14rem;
+        font-family: cursive;
+        opacity: .4;
+        position: absolute;
+        top: -7rem;
+        left: -4rem;
+        z-index: -1;
       }
       cite {
         font-size: .8rem;
+        display: block;
+        margin-left: auto;
       }
     </style>
   </head>
